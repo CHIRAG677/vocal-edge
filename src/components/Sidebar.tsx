@@ -1,11 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Home, Mic, Languages as SignLanguage, Brain, Trophy, Settings } from 'lucide-react';
+import { Home, Mic, Languages as SignLanguage, Brain, Trophy, Settings, MedalIcon } from 'lucide-react';
 
 const Sidebar = () => {
   const navItems = [
     { icon: Home, label: 'Home', path: '/' },
     { icon: Mic, label: 'Voice Analysis', path: '/voice-analysis' },
+    { icon: MedalIcon, label: 'Dr.Connect', path: '/dr-connect' },
     { icon: SignLanguage, label: 'Sign Language', path: '/sign-language' },
     { icon: Brain, label: 'AI Coaching', path: '/ai-coaching' },
     { icon: Trophy, label: 'Progress', path: '/progress' },
